@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreEnergy — Clickable Prototype</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;background:#e8eae7;font-family:'Inter',-apple-system,sans-serif;font-feature-settings:'tnum' 1;display:flex;flex-direction:column;align-items:center;padding:24px 12px 48px;min-height:100vh;}
+.cap{font-size:13px;color:#6B736D;margin-bottom:16px;text-align:center;}
+.cap b{color:#3A423D;font-weight:600;}
+.frame{width:350px;background:#0c0f0d;border-radius:46px;padding:11px;box-shadow:0 12px 40px rgba(0,0,0,0.22);}
+.inner{border-radius:36px;overflow:hidden;}
+.scr{display:none;flex-direction:column;min-height:712px;background:#F7F9F7;}
+.scr.on{display:flex;}
+.sb{display:flex;justify-content:space-between;align-items:center;padding:13px 26px 7px;background:#1B6B3A;color:#fff;font-size:13px;font-weight:600;}
+.sb span:last-child{display:flex;gap:6px;}
+.hd{background:#1B6B3A;color:#fff;padding:6px 22px 20px;}
+.bd{flex:1;padding:16px;}
+.tb{display:flex;justify-content:space-around;align-items:center;background:#fff;border-top:0.5px solid #E3E6E2;padding:9px 8px 18px;margin-top:auto;}
+.t{display:flex;flex-direction:column;align-items:center;gap:3px;color:#9aa19b;cursor:pointer;}
+.t span{font-size:10px;font-weight:500;}
+.t.on{color:#1B6B3A;} .t.on span{font-weight:600;}
+.card{background:#fff;border-radius:16px;border:0.5px solid #CDD2CE;padding:16px;margin-bottom:12px;}
+.bp{background:#1B6B3A;color:#fff;border:none;font-size:13px;font-weight:600;padding:9px 16px;border-radius:20px;cursor:pointer;}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:5px 11px;border-radius:20px;}
+.av{border-radius:50%;background:#DCEAE1;color:#145C31;display:flex;align-items:center;justify-content:center;font-weight:600;flex-shrink:0;}
+.lbl{font-size:11px;color:#6B736D;letter-spacing:0.5px;text-transform:uppercase;font-weight:600;}
+.cdow{text-align:center;font-size:11px;color:#9aa19b;font-weight:600;}
+</style>
+</head>
+<body>
+<div class="cap"><b>GreEnergy — clickable prototype</b><br>Concept only · branding not final · tap the tabs, sign the JSA, clock in</div>
+<div class="frame"><div class="inner">
+
+<div id="s-home" class="scr on">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+      <span style="display:flex;align-items:center;gap:7px;font-size:17px;font-weight:700;letter-spacing:-0.3px;"><i class="ti ti-bolt" style="font-size:19px;color:#7CC79A;"></i>Gre<span style="font-weight:500;">Energy</span></span>
+      <span style="position:relative;"><i class="ti ti-bell" style="font-size:21px;"></i><span style="position:absolute;top:-3px;right:-3px;width:9px;height:9px;background:#FF6B5A;border-radius:50%;border:1.5px solid #1B6B3A;"></span></span>
+    </div>
+    <div style="font-size:24px;font-weight:600;line-height:1.15;letter-spacing:-0.4px;">Good morning, Marcus</div>
+    <div style="font-size:13px;color:#B6DCC4;margin-top:4px;font-weight:500;">Tuesday, June 18</div>
+  </div>
+  <div class="bd">
+    <div class="card" onclick="gshow('schedule')" style="cursor:pointer;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <div><div class="lbl" style="margin-bottom:4px;">Current assignment</div><div style="font-size:20px;font-weight:600;color:#111613;letter-spacing:-0.3px;">Sunstream 4</div></div>
+        <span class="chip" style="background:#EAF4EE;color:#145C31;"><span style="width:6px;height:6px;background:#1B6B3A;border-radius:50%;"></span>On site</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:9px;font-size:13px;color:#3A423D;font-weight:500;"><i class="ti ti-map-pin" style="font-size:16px;color:#1B6B3A;"></i>Coolidge, AZ<span style="margin-left:auto;color:#1B6B3A;font-weight:600;display:inline-flex;align-items:center;gap:3px;">Navigate <i class="ti ti-arrow-up-right" style="font-size:14px;"></i></span></div>
+      <div class="lbl" style="margin:16px 0 8px;">Where you'll be</div>
+      <div style="position:relative;">
+        <div style="display:flex;height:38px;border-radius:9px;overflow:hidden;gap:2px;">
+          <div style="flex:1;background:#1B6B3A;display:flex;flex-direction:column;justify-content:center;padding-left:9px;"><span style="font-size:11px;font-weight:600;color:#fff;">Sunstream 4</span><span style="font-size:10px;color:#B6DCC4;">now</span></div>
+          <div style="flex:1;background:#E2E5E2;display:flex;flex-direction:column;justify-content:center;padding-left:9px;"><span style="font-size:11px;font-weight:600;color:#3A423D;">Home</span><span style="font-size:10px;color:#6B736D;">14 off</span></div>
+          <div style="flex:1;background:#CFE0F0;display:flex;flex-direction:column;justify-content:center;padding-left:9px;"><span style="font-size:11px;font-weight:600;color:#0C447C;">El Sol</span><span style="font-size:10px;color:#185FA5;">Jul 9</span></div>
+        </div>
+        <div style="position:absolute;top:-3px;bottom:-3px;left:19%;width:2px;background:#111613;border-radius:2px;"></div>
+        <div style="position:absolute;top:-7px;left:calc(19% - 3px);width:8px;height:8px;border-radius:50%;background:#111613;"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:10px;color:#9aa19b;font-weight:500;"><span>Jun 11</span><span>Jun 25</span><span>Jul 9</span><span>Jul 22</span></div>
+      <div style="font-size:12px;color:#3A423D;margin-top:10px;font-weight:500;"><i class="ti ti-plane-departure" style="font-size:14px;color:#1B6B3A;vertical-align:-2px;margin-right:4px;"></i>Home in 6 days</div>
+    </div>
+
+    <div style="background:#1B6B3A;border-radius:16px;padding:15px 16px;margin-bottom:12px;display:flex;align-items:center;gap:13px;">
+      <div style="width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;"><i id="clockicon" class="ti ti-clock-play" style="font-size:23px;color:#fff;"></i></div>
+      <div style="flex:1;"><div id="clocktitle" style="font-size:15px;font-weight:600;color:#fff;">Clock in at Sunstream 4</div><div id="clocksub" style="font-size:12px;color:#B6DCC4;display:flex;align-items:center;gap:4px;margin-top:2px;font-weight:500;"><i class="ti ti-map-pin-check" style="font-size:13px;"></i>You're on site · auto-codes to job</div></div>
+      <button id="clockbtn" class="bp" style="background:#fff;color:#145C31;" onclick="gclock(event)">Clock in</button>
+    </div>
+
+    <div class="card" style="display:flex;align-items:center;gap:13px;position:relative;">
+      <i class="ti ti-x" style="position:absolute;top:10px;right:12px;font-size:16px;color:#9aa19b;cursor:pointer;"></i>
+      <div id="hjicon" style="width:42px;height:42px;border-radius:11px;background:#FBEFD6;display:flex;align-items:center;justify-content:center;"><i class="ti ti-clipboard-check" style="font-size:22px;color:#9A6E0A;"></i></div>
+      <div style="flex:1;padding-right:18px;"><div style="font-size:15px;font-weight:600;color:#111613;">Today's JSA</div><div id="hjsub" style="font-size:12px;color:#B07A0E;display:flex;align-items:center;gap:4px;margin-top:2px;font-weight:500;"><i class="ti ti-alert-triangle" style="font-size:13px;"></i>Not signed yet</div></div>
+      <button id="hjbtn" class="bp" onclick="gshow('jsa')">Sign</button>
+    </div>
+
+    <div class="card" onclick="gshow('chat')" style="cursor:pointer;position:relative;">
+      <i class="ti ti-x" style="position:absolute;top:12px;right:12px;font-size:16px;color:#9aa19b;"></i>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px;"><i class="ti ti-messages" style="font-size:18px;color:#1B6B3A;"></i><span style="font-size:14px;font-weight:600;color:#111613;">Sunstream 4 crew</span><span style="margin-left:6px;background:#FF6B5A;color:#fff;font-size:11px;font-weight:600;min-width:18px;height:18px;padding:0 5px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;">3</span></div>
+      <div style="display:flex;gap:9px;align-items:flex-start;"><div class="av" style="width:26px;height:26px;font-size:11px;">HJ</div><div style="font-size:13px;color:#3A423D;line-height:1.45;"><span style="color:#111613;font-weight:600;">Harper:</span> Start time pushed to 6:30 AM tomorrow — gate code changed, see pinned post.</div></div>
+    </div>
+
+    <div style="display:flex;gap:8px;padding-bottom:4px;">
+      <div onclick="gshow('resources')" style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;cursor:pointer;"><i class="ti ti-folder" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Resources</div></div>
+      <div style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;"><i class="ti ti-award" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">My score</div></div>
+      <div style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;"><i class="ti ti-shield-check" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Good catch</div></div>
+      <div style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;"><i class="ti ti-receipt" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Expenses</div></div>
+    </div>
+  </div>
+  <div class="tb">
+    <div class="t on" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+<div id="s-schedule" class="scr">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd" style="padding-bottom:18px;"><div style="font-size:24px;font-weight:600;letter-spacing:-0.4px;">My schedule</div><div style="font-size:13px;color:#B6DCC4;margin-top:3px;font-weight:500;">Where you'll be, week to week</div></div>
+  <div class="bd">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;"><i class="ti ti-chevron-left" style="font-size:20px;color:#6B736D;"></i><span style="font-size:16px;font-weight:600;color:#111613;">June 2026</span><i class="ti ti-chevron-right" style="font-size:20px;color:#6B736D;"></i></div>
+    <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:6px;">
+      <div class="cdow">S</div><div class="cdow">M</div><div class="cdow">T</div><div class="cdow">W</div><div class="cdow">T</div><div class="cdow">F</div><div class="cdow">S</div>
+    </div>
+    <div id="calgrid" style="display:grid;grid-template-columns:repeat(7,1fr);gap:5px;"></div>
+    <div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap;">
+      <span style="display:flex;align-items:center;gap:6px;font-size:11px;color:#3A423D;font-weight:500;"><span style="width:11px;height:11px;border-radius:3px;background:#DCEAE1;border:1px solid #1B6B3A;"></span>Sunstream 4</span>
+      <span style="display:flex;align-items:center;gap:6px;font-size:11px;color:#3A423D;font-weight:500;"><span style="width:11px;height:11px;border-radius:3px;background:#EFF1EF;border:1px solid #CDD2CE;"></span>Home / off</span>
+      <span style="display:flex;align-items:center;gap:6px;font-size:11px;color:#3A423D;font-weight:500;"><span style="width:11px;height:11px;border-radius:3px;background:#CFE0F0;border:1px solid #185FA5;"></span>El Sol</span>
+    </div>
+    <div style="margin-top:18px;">
+      <div style="display:flex;gap:11px;align-items:flex-start;padding-bottom:14px;"><div style="width:9px;height:9px;border-radius:50%;background:#1B6B3A;margin-top:4px;"></div><div style="flex:1;"><div style="font-size:13px;font-weight:600;color:#111613;">Sunstream 4 · Coolidge, AZ</div><div style="font-size:12px;color:#6B736D;">Jun 11 – Jun 24 · 6 days left</div></div></div>
+      <div style="display:flex;gap:11px;align-items:flex-start;padding-bottom:14px;"><div style="width:9px;height:9px;border-radius:50%;background:#C2C7C2;margin-top:4px;"></div><div style="flex:1;"><div style="font-size:13px;font-weight:600;color:#111613;">Home · 14 days off</div><div style="font-size:12px;color:#6B736D;">Jun 25 – Jul 8</div></div></div>
+      <div style="display:flex;gap:11px;align-items:flex-start;"><div style="width:9px;height:9px;border-radius:50%;background:#185FA5;margin-top:4px;"></div><div style="flex:1;"><div style="font-size:13px;font-weight:600;color:#111613;">El Sol · Coolidge, AZ</div><div style="font-size:12px;color:#6B736D;">Jul 9 – Jul 22 · with Tyson Silva</div></div></div>
+    </div>
+  </div>
+  <div class="tb">
+    <div class="t" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t on" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+<div id="s-jsa" class="scr">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd" style="padding-bottom:16px;"><div style="font-size:24px;font-weight:600;letter-spacing:-0.4px;">Daily JSA</div><div style="font-size:13px;color:#B6DCC4;margin-top:3px;font-weight:500;">Sunstream 4 · Jun 18 · auto-filled</div></div>
+  <div class="bd">
+    <div class="card">
+      <div class="lbl" style="margin-bottom:10px;">Tasks &amp; hazards</div>
+      <div style="font-size:13px;color:#111613;font-weight:600;">Battery rack torque check</div>
+      <div style="font-size:12px;color:#6B736D;margin:2px 0 10px;line-height:1.5;"><span style="color:#B07A0E;font-weight:600;">Hazard:</span> Stored energy / arc flash &nbsp;·&nbsp; <span style="color:#145C31;font-weight:600;">Control:</span> LOTO + Cat 2 PPE</div>
+      <div style="font-size:13px;color:#111613;font-weight:600;border-top:0.5px solid #E3E6E2;padding-top:10px;">DC cable termination</div>
+      <div style="font-size:12px;color:#6B736D;margin-top:2px;line-height:1.5;"><span style="color:#B07A0E;font-weight:600;">Hazard:</span> Pinch / heavy lift &nbsp;·&nbsp; <span style="color:#145C31;font-weight:600;">Control:</span> Two-person lift, gloves</div>
+    </div>
+    <div class="card">
+      <div class="lbl" style="margin-bottom:12px;">Crew signatures</div>
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:11px;"><div class="av" style="width:28px;height:28px;font-size:11px;">HJ</div><span style="font-size:13px;color:#111613;flex:1;">Harper Jones</span><i class="ti ti-circle-check" style="color:#1B6B3A;font-size:19px;"></i></div>
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:11px;"><div class="av" style="width:28px;height:28px;font-size:11px;">TS</div><span style="font-size:13px;color:#111613;flex:1;">Tyson Silva</span><i class="ti ti-circle-check" style="color:#1B6B3A;font-size:19px;"></i></div>
+      <div style="display:flex;align-items:center;gap:9px;"><div class="av" style="width:28px;height:28px;font-size:11px;background:#FBEFD6;color:#9A6E0A;">MC</div><span style="font-size:13px;color:#111613;flex:1;font-weight:600;">Marcus Cole (you)</span><span id="jsa-status" style="font-size:12px;color:#B07A0E;font-weight:600;">Awaiting</span></div>
+    </div>
+    <button id="jsa-sign" class="bp" style="width:100%;padding:14px;border-radius:14px;font-size:15px;" onclick="gsign()"><i class="ti ti-signature" style="font-size:17px;vertical-align:-3px;margin-right:6px;"></i>Add my signature</button>
+    <div style="text-align:center;margin-top:14px;"><span style="font-size:13px;color:#1B6B3A;font-weight:600;">+ Add visitor signature</span></div>
+  </div>
+  <div class="tb">
+    <div class="t" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t on" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+<div id="s-chat" class="scr">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd" style="padding-bottom:14px;display:flex;align-items:center;gap:11px;">
+    <i class="ti ti-chevron-left" style="font-size:24px;cursor:pointer;" onclick="gshow('home')"></i>
+    <div><div style="font-size:17px;font-weight:600;">Sunstream 4 crew</div><div style="font-size:12px;color:#B6DCC4;font-weight:500;">5 members · Harper, Tyson, +3</div></div>
+  </div>
+  <div class="bd" style="padding-bottom:8px;">
+    <div style="background:#FBEFD6;border-radius:12px;padding:11px 13px;margin-bottom:16px;display:flex;gap:9px;align-items:flex-start;"><i class="ti ti-pin" style="color:#9A6E0A;font-size:17px;"></i><div style="font-size:12px;color:#6B4E08;line-height:1.5;"><span style="font-weight:600;">Pinned:</span> Gate code is now 4471. Park in the east lot.</div></div>
+    <div style="display:flex;gap:9px;align-items:flex-start;margin-bottom:14px;"><div class="av" style="width:30px;height:30px;font-size:11px;">HJ</div><div><div style="font-size:11px;color:#6B736D;margin-bottom:3px;">Harper Jones · 6:02 AM</div><div style="background:#fff;border:0.5px solid #CDD2CE;border-radius:4px 14px 14px 14px;padding:10px 13px;font-size:13px;color:#111613;line-height:1.45;max-width:215px;">Start time pushed to 6:30 AM tomorrow — gate code changed, see pinned post.</div></div></div>
+    <div style="display:flex;gap:9px;align-items:flex-start;margin-bottom:14px;"><div class="av" style="width:30px;height:30px;font-size:11px;">TS</div><div><div style="font-size:11px;color:#6B736D;margin-bottom:3px;">Tyson Silva · 6:08 AM</div><div style="background:#fff;border:0.5px solid #CDD2CE;border-radius:4px 14px 14px 14px;padding:10px 13px;font-size:13px;color:#111613;line-height:1.45;max-width:215px;">Copy. I'll bring the torque wrenches up from the conex.</div></div></div>
+    <div style="display:flex;gap:9px;align-items:flex-start;justify-content:flex-end;"><div><div style="font-size:11px;color:#6B736D;margin-bottom:3px;text-align:right;">You · 6:15 AM</div><div style="background:#1B6B3A;color:#fff;border-radius:14px 4px 14px 14px;padding:10px 13px;font-size:13px;line-height:1.45;max-width:215px;">See everyone at the east lot.</div></div></div>
+  </div>
+  <div style="display:flex;gap:9px;align-items:center;padding:10px 14px;background:#fff;border-top:0.5px solid #E3E6E2;"><div style="flex:1;background:#F7F9F7;border:0.5px solid #CDD2CE;border-radius:20px;padding:9px 14px;font-size:13px;color:#9aa19b;">Message the crew…</div><i class="ti ti-camera" style="font-size:22px;color:#1B6B3A;"></i><i class="ti ti-send" style="font-size:22px;color:#1B6B3A;"></i></div>
+  <div class="tb">
+    <div class="t" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t on" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+<div id="s-resources" class="scr">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd" style="padding-bottom:16px;"><div style="font-size:24px;font-weight:600;letter-spacing:-0.4px;">Resources</div><div style="font-size:13px;color:#B6DCC4;margin-top:3px;font-weight:500;">Forms, policies &amp; company info</div></div>
+  <div class="bd">
+    <div style="background:#fff;border:0.5px solid #CDD2CE;border-radius:12px;padding:11px 14px;display:flex;align-items:center;gap:9px;margin-bottom:16px;"><i class="ti ti-search" style="font-size:18px;color:#9aa19b;"></i><span style="font-size:13px;color:#9aa19b;">Search resources…</span></div>
+    <div class="card" style="padding:4px 16px;">
+      <div style="display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:0.5px solid #E3E6E2;"><div style="width:34px;height:34px;border-radius:9px;background:#EAF4EE;display:flex;align-items:center;justify-content:center;"><i class="ti ti-user-heart" style="font-size:19px;color:#1B6B3A;"></i></div><div style="flex:1;"><div style="font-size:14px;font-weight:600;color:#111613;">Human Resources</div><div style="font-size:12px;color:#6B736D;">PTO, benefits, handbook</div></div><i class="ti ti-chevron-right" style="color:#9aa19b;font-size:18px;"></i></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:0.5px solid #E3E6E2;"><div style="width:34px;height:34px;border-radius:9px;background:#EAF4EE;display:flex;align-items:center;justify-content:center;"><i class="ti ti-clipboard-text" style="font-size:19px;color:#1B6B3A;"></i></div><div style="flex:1;"><div style="font-size:14px;font-weight:600;color:#111613;">Operations</div><div style="font-size:12px;color:#6B736D;">Expenses, travel, rotation requests</div></div><i class="ti ti-chevron-right" style="color:#9aa19b;font-size:18px;"></i></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:0.5px solid #E3E6E2;"><div style="width:34px;height:34px;border-radius:9px;background:#EAF4EE;display:flex;align-items:center;justify-content:center;"><i class="ti ti-shield-check" style="font-size:19px;color:#1B6B3A;"></i></div><div style="flex:1;"><div style="font-size:14px;font-weight:600;color:#111613;">Safety</div><div style="font-size:12px;color:#6B736D;">Incident &amp; Good Catch, JSA library</div></div><i class="ti ti-chevron-right" style="color:#9aa19b;font-size:18px;"></i></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:13px 0;"><div style="width:34px;height:34px;border-radius:9px;background:#EAF4EE;display:flex;align-items:center;justify-content:center;"><i class="ti ti-building" style="font-size:19px;color:#1B6B3A;"></i></div><div style="flex:1;"><div style="font-size:14px;font-weight:600;color:#111613;">Company</div><div style="font-size:12px;color:#6B736D;">Directory, announcements, org chart</div></div><i class="ti ti-chevron-right" style="color:#9aa19b;font-size:18px;"></i></div>
+    </div>
+  </div>
+  <div class="tb">
+    <div class="t" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t on" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+</div></div>
+
+<script>
+function gshow(id){document.querySelectorAll('.scr').forEach(function(s){s.classList.remove('on')});document.getElementById('s-'+id).classList.add('on');window.scrollTo(0,0);}
+function gclock(e){e.stopPropagation();var b=document.getElementById('clockbtn');document.getElementById('clocktitle').textContent='Clocked in · Sunstream 4';document.getElementById('clocksub').innerHTML='<i class="ti ti-check" style="font-size:13px;"></i>Since 9:41 AM · cost-coded SS4';document.getElementById('clockicon').className='ti ti-clock-check';b.textContent='Clocked in';b.style.opacity='0.6';b.onclick=null;}
+function gsign(){document.getElementById('jsa-status').innerHTML='<i class="ti ti-circle-check" style="color:#1B6B3A;font-size:19px;"></i>';var btn=document.getElementById('jsa-sign');btn.innerHTML='<i class="ti ti-check" style="font-size:17px;vertical-align:-3px;margin-right:6px;"></i>Signed at 9:41 AM';btn.style.background='#EAF4EE';btn.style.color='#145C31';btn.onclick=null;document.getElementById('hjsub').innerHTML='<i class="ti ti-circle-check" style="font-size:13px;color:#1B6B3A;"></i><span style="color:#145C31;">Signed at 9:41 AM</span>';var hi=document.getElementById('hjicon');hi.style.background='#EAF4EE';hi.innerHTML='<i class="ti ti-clipboard-check" style="font-size:22px;color:#1B6B3A;"></i>';var hb=document.getElementById('hjbtn');hb.textContent='View';hb.style.background='#EFF1EF';hb.style.color='#3A423D';hb.onclick=function(){gshow('jsa')};}
+var cells=[{d:31,c:'o'},{d:1,c:'h',p:1},{d:2,c:'h',p:1},{d:3,c:'h',p:1},{d:4,c:'h',p:1},{d:5,c:'h',p:1},{d:6,c:'h',p:1},{d:7,c:'h',p:1},{d:8,c:'h',p:1},{d:9,c:'h',p:1},{d:10,c:'h',p:1},{d:11,c:'s',p:1},{d:12,c:'s',p:1},{d:13,c:'s',p:1},{d:14,c:'s',p:1},{d:15,c:'s',p:1},{d:16,c:'s',p:1},{d:17,c:'s',p:1},{d:18,c:'s',today:1},{d:19,c:'s'},{d:20,c:'s'},{d:21,c:'s'},{d:22,c:'s'},{d:23,c:'s'},{d:24,c:'s'},{d:25,c:'h'},{d:26,c:'h'},{d:27,c:'h'},{d:28,c:'h'},{d:29,c:'h'},{d:30,c:'h'},{d:1,c:'o'},{d:2,c:'o'},{d:3,c:'o'},{d:4,c:'o'}];
+var g=document.getElementById('calgrid');
+cells.forEach(function(x){var bg=x.c=='s'?'#DCEAE1':x.c=='h'?'#EFF1EF':'transparent';var col=x.c=='s'?'#145C31':x.c=='h'?'#5F6B62':'#C2C7C2';var st='aspect-ratio:1;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;background:'+bg+';color:'+col+';font-weight:500;';if(x.today){st+='border:2px solid #1B6B3A;font-weight:700;color:#111613;';}if(x.p){st+='opacity:0.45;';}var e=document.createElement('div');e.setAttribute('style',st);e.textContent=x.d;g.appendChild(e);});
+</script>
+</body>
+</html>
