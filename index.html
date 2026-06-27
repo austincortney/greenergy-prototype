@@ -87,7 +87,7 @@ body{margin:0;background:#e8eae7;font-family:'Inter',-apple-system,sans-serif;fo
 
     <div style="display:flex;gap:8px;padding-bottom:4px;">
       <div onclick="gshow('resources')" style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;cursor:pointer;"><i class="ti ti-folder" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Resources</div></div>
-      <div style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;"><i class="ti ti-award" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">My score</div></div>
+      <div onclick="gshow('career')" style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;cursor:pointer;"><i class="ti ti-chart-line" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Career</div></div>
       <div style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;"><i class="ti ti-shield-check" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Good catch</div></div>
       <div style="flex:1;background:#fff;border:0.5px solid #CDD2CE;border-radius:14px;padding:13px 6px;text-align:center;"><i class="ti ti-receipt" style="font-size:22px;color:#1B6B3A;"></i><div style="font-size:11px;color:#3A423D;margin-top:6px;font-weight:500;">Expenses</div></div>
     </div>
@@ -178,6 +178,116 @@ body{margin:0;background:#e8eae7;font-family:'Inter',-apple-system,sans-serif;fo
     <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
     <div class="t on" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
     <div class="t" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+<div id="s-career" class="scr">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd" style="padding-bottom:16px;display:flex;align-items:center;gap:11px;">
+    <i class="ti ti-chevron-left" style="font-size:24px;cursor:pointer;" onclick="gshow('home')"></i>
+    <div><div style="font-size:24px;font-weight:600;letter-spacing:-0.4px;">Career</div><div style="font-size:12px;color:#B6DCC4;font-weight:500;margin-top:1px;">How am I doing? What should I work on?</div></div>
+  </div>
+  <div class="bd">
+    <div class="card">
+      <div class="lbl">Career progress</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:4px;"><span style="font-size:30px;font-weight:700;color:#111613;">4.3</span><span style="font-size:15px;color:#6B736D;">/ 5.0</span><span style="margin-left:auto;font-size:12px;color:#145C31;font-weight:600;display:inline-flex;align-items:center;gap:3px;"><i class="ti ti-trending-up" style="font-size:15px;"></i>+0.28</span></div>
+      <div style="height:8px;background:#EFF1EF;border-radius:4px;margin-top:10px;overflow:hidden;"><div style="width:86%;height:100%;background:#1B6B3A;border-radius:4px;"></div></div>
+      <div style="display:flex;gap:8px;margin-top:14px;">
+        <div style="flex:1;"><div style="font-size:11px;color:#6B736D;">Mentor</div><div style="font-size:13px;font-weight:600;color:#111613;">Isaiah O.</div></div>
+        <div style="flex:1;"><div style="font-size:11px;color:#6B736D;">With GreEnergy</div><div style="font-size:13px;font-weight:600;color:#111613;">3 yrs</div></div>
+        <div style="flex:1;"><div style="font-size:11px;color:#6B736D;">Next review</div><div style="font-size:13px;font-weight:600;color:#111613;">Jul 8</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="lbl" style="margin-bottom:12px;">Core values</div>
+      <div style="margin-bottom:11px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:13px;color:#111613;">Proud of What We Do</span><span style="font-size:13px;font-weight:600;color:#111613;">4.6</span></div><div style="height:6px;background:#EFF1EF;border-radius:3px;overflow:hidden;"><div style="width:92%;height:100%;background:#1B6B3A;border-radius:3px;"></div></div></div>
+      <div style="margin-bottom:11px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:13px;color:#111613;">Driven to Excellence</span><span style="font-size:13px;font-weight:600;color:#111613;">4.4</span></div><div style="height:6px;background:#EFF1EF;border-radius:3px;overflow:hidden;"><div style="width:88%;height:100%;background:#1B6B3A;border-radius:3px;"></div></div></div>
+      <div style="margin-bottom:11px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:13px;color:#111613;">Do What's Right</span><span style="font-size:13px;font-weight:600;color:#111613;">4.8</span></div><div style="height:6px;background:#EFF1EF;border-radius:3px;overflow:hidden;"><div style="width:96%;height:100%;background:#1B6B3A;border-radius:3px;"></div></div></div>
+      <div style="margin-bottom:11px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:13px;color:#111613;">Adaptable</span><span style="font-size:13px;font-weight:600;color:#111613;">4.1</span></div><div style="height:6px;background:#EFF1EF;border-radius:3px;overflow:hidden;"><div style="width:82%;height:100%;background:#1B6B3A;border-radius:3px;"></div></div></div>
+      <div style="margin-bottom:11px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:13px;color:#111613;">Teamwork &amp; Communication</span><span style="font-size:13px;font-weight:600;color:#111613;">4.5</span></div><div style="height:6px;background:#EFF1EF;border-radius:3px;overflow:hidden;"><div style="width:90%;height:100%;background:#1B6B3A;border-radius:3px;"></div></div></div>
+      <div><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:13px;color:#111613;">Leadership</span><span style="font-size:13px;font-weight:600;color:#111613;">4.0</span></div><div style="height:6px;background:#EFF1EF;border-radius:3px;overflow:hidden;"><div style="width:80%;height:100%;background:#1B6B3A;border-radius:3px;"></div></div></div>
+    </div>
+
+    <div class="card">
+      <div class="lbl" style="margin-bottom:12px;">What I'm working on</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><i class="ti ti-progress" style="font-size:19px;color:#B07A0E;"></i><span style="font-size:13px;color:#111613;flex:1;">Lead morning tailboards</span><span style="font-size:11px;color:#B07A0E;font-weight:600;">In progress</span></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><i class="ti ti-circle-check" style="font-size:19px;color:#1B6B3A;"></i><span style="font-size:13px;color:#111613;flex:1;">Complete OSHA 30</span><span style="font-size:11px;color:#145C31;font-weight:600;">Completed</span></div>
+      <div style="display:flex;align-items:center;gap:10px;"><i class="ti ti-progress" style="font-size:19px;color:#B07A0E;"></i><span style="font-size:13px;color:#111613;flex:1;">Improve customer communication</span><span style="font-size:11px;color:#B07A0E;font-weight:600;">In progress</span></div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;"><div class="lbl">Certifications</div><span style="margin-left:auto;font-size:12px;color:#1B6B3A;font-weight:600;display:inline-flex;align-items:center;gap:4px;"><i class="ti ti-download" style="font-size:14px;"></i>Export proof</span></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;">
+        <span style="background:#EAF4EE;color:#145C31;font-size:12px;font-weight:600;padding:6px 11px;border-radius:8px;">OSHA 10</span>
+        <span style="background:#EAF4EE;color:#145C31;font-size:12px;font-weight:600;padding:6px 11px;border-radius:8px;">OSHA 30</span>
+        <span style="background:#EAF4EE;color:#145C31;font-size:12px;font-weight:600;padding:6px 11px;border-radius:8px;">NFPA 70E</span>
+        <span style="background:#EAF4EE;color:#145C31;font-size:12px;font-weight:600;padding:6px 11px;border-radius:8px;">LG Training</span>
+      </div>
+    </div>
+
+    <div class="card" style="padding:4px 16px;">
+      <div class="lbl" style="padding:13px 0 5px;">Recent career check-ins</div>
+      <div onclick="gshow('checkin')" style="display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:0.5px solid #E3E6E2;cursor:pointer;"><div class="av" style="width:34px;height:34px;font-size:12px;">HJ</div><div style="flex:1;"><div style="font-size:13px;font-weight:600;color:#111613;">Sunstream 4</div><div style="font-size:12px;color:#6B736D;">Jun 24 · Harper Jones</div></div><span style="font-size:16px;font-weight:700;color:#1B6B3A;">4.5</span><i class="ti ti-chevron-right" style="color:#9aa19b;font-size:18px;"></i></div>
+      <div style="display:flex;align-items:center;gap:11px;padding:11px 0;"><div class="av" style="width:34px;height:34px;font-size:12px;background:#DCE7F2;color:#185FA5;">SV</div><div style="flex:1;"><div style="font-size:13px;font-weight:600;color:#111613;">Switchgrass</div><div style="font-size:12px;color:#6B736D;">May 30 · Seth Vanderbosch</div></div><span style="font-size:16px;font-weight:700;color:#1B6B3A;">4.2</span><i class="ti ti-chevron-right" style="color:#9aa19b;font-size:18px;"></i></div>
+    </div>
+
+    <div class="card" style="padding:4px 16px;margin-bottom:4px;">
+      <div class="lbl" style="padding:13px 0 9px;">Career timeline</div>
+      <div style="display:flex;gap:11px;align-items:flex-start;padding-bottom:13px;"><i class="ti ti-clipboard-check" style="font-size:17px;color:#1B6B3A;margin-top:1px;"></i><div style="flex:1;"><div style="font-size:13px;color:#111613;">Career Check-In · Harper Jones · 4.5</div><div style="font-size:11px;color:#9aa19b;">Jun 24</div></div></div>
+      <div style="display:flex;gap:11px;align-items:flex-start;padding-bottom:13px;"><i class="ti ti-certificate" style="font-size:17px;color:#1B6B3A;margin-top:1px;"></i><div style="flex:1;"><div style="font-size:13px;color:#111613;">OSHA 30 completed</div><div style="font-size:11px;color:#9aa19b;">Jun 15 · via HSI</div></div></div>
+      <div style="display:flex;gap:11px;align-items:flex-start;padding-bottom:13px;"><i class="ti ti-shield-check" style="font-size:17px;color:#1B6B3A;margin-top:1px;"></i><div style="flex:1;"><div style="font-size:13px;color:#111613;">Good Catch recognized</div><div style="font-size:11px;color:#9aa19b;">May 22</div></div></div>
+      <div style="display:flex;gap:11px;align-items:flex-start;"><i class="ti ti-clipboard-check" style="font-size:17px;color:#185FA5;margin-top:1px;"></i><div style="flex:1;"><div style="font-size:13px;color:#111613;">Career Check-In · Seth Vanderbosch · 4.2</div><div style="font-size:11px;color:#9aa19b;">May 30</div></div></div>
+    </div>
+  </div>
+  <div class="tb">
+    <div class="t" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t on" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
+  </div>
+</div>
+
+<div id="s-checkin" class="scr">
+  <div class="sb"><span>9:41</span><span><i class="ti ti-signal-4g"></i><i class="ti ti-wifi"></i><i class="ti ti-battery-3"></i></span></div>
+  <div class="hd" style="padding-bottom:16px;display:flex;align-items:center;gap:11px;">
+    <i class="ti ti-chevron-left" style="font-size:24px;cursor:pointer;" onclick="gshow('career')"></i>
+    <div><div style="font-size:20px;font-weight:600;letter-spacing:-0.3px;">Career Check-In</div><div style="font-size:12px;color:#B6DCC4;font-weight:500;margin-top:1px;">Sunstream 4 · Jun 24, 2026</div></div>
+  </div>
+  <div class="bd">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:11px;">
+        <div class="av" style="width:38px;height:38px;font-size:13px;">HJ</div>
+        <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:#111613;">Harper Jones</div><div style="font-size:12px;color:#6B736D;">Site Manager · Sunstream 4</div></div>
+        <div style="text-align:right;"><div style="font-size:24px;font-weight:700;color:#1B6B3A;">4.5</div><div style="font-size:10px;color:#6B736D;">overall</div></div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:14px;">
+        <div style="flex:1;background:#EAF4EE;border-radius:10px;padding:9px 11px;"><div style="font-size:11px;color:#145C31;">Request again?</div><div style="font-size:13px;font-weight:600;color:#145C31;">Yes</div></div>
+        <div style="flex:1;background:#F7F9F7;border-radius:10px;padding:9px 11px;"><div style="font-size:11px;color:#6B736D;">More responsibility?</div><div style="font-size:13px;font-weight:600;color:#111613;">Maybe</div></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:4px 16px;">
+      <div style="padding:12px 0;border-bottom:0.5px solid #E3E6E2;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:#111613;">Proud of What We Do</span><span style="background:#1B6B3A;color:#fff;font-size:12px;font-weight:700;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;">5</span></div></div>
+      <div style="padding:12px 0;border-bottom:0.5px solid #E3E6E2;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:#111613;">Driven to Excellence</span><span style="background:#1B6B3A;color:#fff;font-size:12px;font-weight:700;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;">4</span></div></div>
+      <div style="padding:12px 0;border-bottom:0.5px solid #E3E6E2;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:#111613;">Do What's Right</span><span style="background:#1B6B3A;color:#fff;font-size:12px;font-weight:700;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;">5</span></div><div style="font-size:12px;color:#6B736D;margin-top:5px;line-height:1.5;">"Caught a torque-spec error before energization — textbook stop-work."</div></div>
+      <div style="padding:12px 0;border-bottom:0.5px solid #E3E6E2;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:#111613;">Adaptable</span><span style="background:#1B6B3A;color:#fff;font-size:12px;font-weight:700;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;">4</span></div></div>
+      <div style="padding:12px 0;border-bottom:0.5px solid #E3E6E2;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:#111613;">Teamwork &amp; Communication</span><span style="background:#1B6B3A;color:#fff;font-size:12px;font-weight:700;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;">5</span></div></div>
+      <div style="padding:12px 0;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:#111613;">Leadership</span><span style="background:#22844A;color:#fff;font-size:12px;font-weight:700;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;">4</span></div><div style="font-size:12px;color:#6B736D;margin-top:5px;line-height:1.5;">"Stepped up to run the tailboard when the lead was off-site."</div></div>
+    </div>
+
+    <div class="card" style="margin-bottom:4px;">
+      <div class="lbl" style="margin-bottom:6px;">Overall comments</div>
+      <div style="font-size:13px;color:#3A423D;line-height:1.55;">Marcus is one of the most reliable techs on SS4. Calm under pressure and a natural with the younger guys. Ready for a Site Lead trial next rotation.</div>
+    </div>
+  </div>
+  <div class="tb">
+    <div class="t" onclick="gshow('home')"><i class="ti ti-home" style="font-size:23px;"></i><span>Home</span></div>
+    <div class="t" onclick="gshow('schedule')"><i class="ti ti-calendar" style="font-size:23px;"></i><span>Schedule</span></div>
+    <div class="t" onclick="gshow('jsa')"><i class="ti ti-clipboard-list" style="font-size:23px;"></i><span>JSA</span></div>
+    <div class="t" onclick="gshow('chat')"><i class="ti ti-message" style="font-size:23px;"></i><span>Chat</span></div>
+    <div class="t on" onclick="gshow('resources')"><i class="ti ti-menu-2" style="font-size:23px;"></i><span>More</span></div>
   </div>
 </div>
 
